@@ -1,13 +1,35 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ index.html of inter-jquery.bauska.org (uc-davis) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Brian Bauska (bbauska)" />
+  <meta name="title" content="UC @Davis' Interactivity with JS and jQuery" />
+  <meta name="description" content="University of California at Davis - Interactivity 
+    with JavaScript and jQuery: The course objectives include how to identify objects 
+	in JavaScript; how to create new objects and populate them with data; how to 
+	manipulate objects by adding, modifying and deleting data in objects; how to 
+	manipulate the DOM based on the data in objects; how to identify and articulate 
+	how multiple functions work together to create a more complex program; and, how 
+	to identify processes so as to break down larger programs into smaller, more 
+	manageable pieces." />
+
+  <title>UC @Davis' Interactivity with JavaScript and jQuery</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    <title>Sidebar Menu</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 *{
 	list-style: none;
@@ -21,7 +43,6 @@
 body{
 	background: #f5f6fa;
 }
-
 .wrapper .sidebar{
 	background: rgb(5, 68, 104);
 	position: fixed;
@@ -32,12 +53,10 @@ body{
 	padding: 20px 0;
 	transition: all 0.5s ease;
 }
-
 .wrapper .sidebar .profile{
 	margin-bottom: 30px;
 	text-align: center;
 }
-
 .wrapper .sidebar .profile img{
 	display: block;
 	width: 100px;
@@ -45,17 +64,14 @@ body{
     border-radius: 50%;
 	margin: 0 auto;
 }
-
 .wrapper .sidebar .profile h3{
 	color: #ffffff;
 	margin: 10px 0 5px;
 }
-
 .wrapper .sidebar .profile p{
 	color: rgb(206, 240, 253);
 	font-size: 14px;
 }
-
 .wrapper .sidebar ul li a{
 	display: block;
 	padding: 13px 30px;
@@ -64,15 +80,11 @@ body{
 	font-size: 16px;
 	position: relative;
 }
-
 .wrapper .sidebar ul li a .icon{
 	color: #dee4ec;
 	width: 30px;
 	display: inline-block;
 }
-
- 
-
 .wrapper .sidebar ul li a:hover,
 .wrapper .sidebar ul li a.active{
 	color: #0c7db1;
@@ -80,23 +92,19 @@ body{
 	background:white;
     border-right: 2px solid rgb(5, 68, 104);
 }
-
 .wrapper .sidebar ul li a:hover .icon,
 .wrapper .sidebar ul li a.active .icon{
 	color: #0c7db1;
 }
-
 .wrapper .sidebar ul li a:hover:before,
 .wrapper .sidebar ul li a.active:before{
 	display: block;
 }
-
 .wrapper .section{
 	width: calc(100% - 225px);
 	margin-left: 225px;
 	transition: all 0.5s ease;
 }
-
 .wrapper .section .top_navbar{
 	background: rgb(7, 105, 185);
 	height: 50px;
@@ -105,31 +113,109 @@ body{
 	padding: 0 30px;
  
 }
-
 .wrapper .section .top_navbar .hamburger a{
 	font-size: 28px;
 	color: #f4fbff;
 }
-
 .wrapper .section .top_navbar .hamburger a:hover{
 	color: #a2ecff;
 }
 
- 
-
 body.active .wrapper .sidebar{
 	left: -225px;
 }
-
 body.active .wrapper .section{
 	margin-left: 0;
 	width: 100%;
 }
 
-    </style>
+  </style>
 </head>
 <body>
-   
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <script>
+  <!-- get the button -->
+  var mybutton = document.getElementById("myBtn");
+
+  <!-- when the user scrolls down 10px from the top of the document, show the button -->
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  <!-- when the user clicks on the button, scroll to the top of the document. 0,0 or -->
+  <!-- to table of contents (approx ###), if applicable was; 315 -->
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+  <header id="title-block-header">
+    <h1 style="text-align:center;" class="title">Interactivity with JavaScript and jQuery</h1>
+    <h6 style="text-align:center;">(by William Mead, Lecturer - University of California 
+    <span class="citation" data-cites="Davis">@Davis</span>)</h6>
+  </header>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. jquery & javascript logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<img class="displayed"
+  src="./images/image001.png"
+  style="width:30%; float: left; margin-left: 20%; margin-bottom: 1em;"
+  title="jQuery and JavaScript logo"
+  alt="jQuery and JavaScript logo." />
+<img class="displayed"
+  src="./images/image002.png"
+  style="width:20%; float: left; margin-left: 10%; margin-bottom: 1em;"
+  title="University of California @Davis logo"
+  alt="University of California @Davis logo." />
+<p style="clear: both;"></p>
+
+<h3>About this Course</h3>
+
+<p>This course is the third in our JavaScript for Beginners Specialization.
+The scripts will become more complex and introduce more complex jQuery
+plugins. You will have several challenges to practice your skills
+throughout the course.</p>
+
+<p>The course objectives include how to identify objects in JavaScript;
+create new objects and populate them with data; manipulate objects by
+adding, modifying and deleting data in objects; manipulate the DOM based
+on the data in objects; identify and articulate how multiple functions
+work together to create a more complex program; and identify processes
+for breaking larger programs into smaller, more manageable pieces.</p>
+
+<h3><b>Week 1: jQuery Plugins and Capturing the Scroll Event</b></h3>
+
+<div>
+  <h4><a href="#ch1-00"><b>1.00 Welcome!</b></a></h4>
+  <h4><a href="#ch1-01"><b>1.01 Module 1 Introduction</b></a></h4>
+  <h4><a href="#ch1-02"><b>1.02 Intro to jQuery Plugins</b></a></h4>
+  <h4><a href="#ch1-03"><b>1.03 Using Plugins and Essential Steps</b></a></h4>
+  <h4><a href="#ch1-04"><b>1.04 Gotchas and Rookie Mistakes</b></a></h4>
+</div>
+
+<ul>
+  <li><a href="./pdf/1.04-jQuery-Plugins.pdf" 
+    alt="1.04 jQuery Plugins (display pdf)." 
+    target="_blank" rel="noreferrer noopener">
+    1.04 jQuery Plugins (display pdf)</a><br><br></li>
+  <li><a href="./zip/1.04-FlexSliderBasic-START.zip" 
+    alt="1.04 Flex Slider Basic START (zip download)." 
+    target="_blank" rel="noopener noreferrer">
+    1.04 Flex Slider Basic START (zip download)</a><br><br></li>
+  <li><a href="./zip/1.04-FlexSliderPlugin.zip" 
+    alt="1.04 Flex Slider Plugin (zip download)." 
+    target="_blank" rel="noopener noreferrer">
+    1.04 Flex Slider Plugin (zip download)</a></li>
+</ul>
+
     <div class="wrapper">
         <div class="section">
             <div class="top_navbar">
@@ -143,8 +229,8 @@ body.active .wrapper .section{
         </div>
         <div class="sidebar">
             <div class="profile">
-                <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg" alt="profile_picture">
-                <h3>Anamika Roy</h3>
+                <img src="./images/me.jpg" alt="profile_picture">
+                <h3>Brian Bauska</h3>
                 <p>Designer</p>
             </div>
             <ul>
@@ -157,43 +243,31 @@ body.active .wrapper .section{
                 <li>
                     <a href="#">
                         <span class="icon"><i class="fas fa-desktop"></i></span>
-                        <span class="item">My Dashboard</span>
+                        <span class="item">Week 1 - CSS</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <span class="icon"><i class="fas fa-user-friends"></i></span>
-                        <span class="item">People</span>
+                        <span class="item">Week 2 - Advanced Styling</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
-                        <span class="item">Perfomance</span>
+                        <span class="item">Pseudo Classes &amp; Elements</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <span class="icon"><i class="fas fa-database"></i></span>
-                        <span class="item">Development</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-chart-line"></i></span>
-                        <span class="item">Reports</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-user-shield"></i></span>
-                        <span class="item">Admin</span>
+                        <span class="item">Putting it Together</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <span class="icon"><i class="fas fa-cog"></i></span>
-                        <span class="item">Settings</span>
+                        <span class="item">About Me</span>
                     </a>
                 </li>
             </ul>
