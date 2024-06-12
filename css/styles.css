@@ -10,10 +10,10 @@
 }
 
 body{
-	background: #f5f6fa;
+	background: #d2f8d2;  /* light green, f5f6fa = light grayish blue */
 }
 .wrapper .sidebar{
-	background: rgb(5, 68, 104);
+	background: rgb(1, 50, 32);  /* dark green; 5,68,104 = very dark blue */
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -34,36 +34,36 @@ body{
 	margin: 0 auto;
 }
 .wrapper .sidebar .profile h3{
-	color: #ffffff;
+	color: #ffffff;  /* white */
 	margin: 10px 0 5px;
 }
 .wrapper .sidebar .profile p{
-	color: rgb(206, 240, 253);
+	color: rgb(210, 248, 210)  /* light green; (206, 240, 253) = light grayish blue */
 	font-size: 14px;
 }
 .wrapper .sidebar ul li a{
 	display: block;
 	padding: 13px 30px;
-	border-bottom: 1px solid #10558d;
-	color: rgb(241, 237, 237);
+	border-bottom: 1px solid #013220;  /* 10558d = d blue */
+	color: rgb(241, 237, 237);  /* light grayish red */
 	font-size: 16px;
 	position: relative;
 }
 .wrapper .sidebar ul li a .icon{
-	color: #dee4ec;
+	color: #dee4ec;  /* light grayish blue */
 	width: 30px;
 	display: inline-block;
 }
 .wrapper .sidebar ul li a:hover,
 .wrapper .sidebar ul li a.active{
-	color: #0c7db1;
+	color: #013220;  /* v dark green; 0c7db1=dark blue */
 
 	background:white;
-    border-right: 2px solid rgb(5, 68, 104);
+    border-right: 2px solid rgb(1, 50, 32);  /* v dark green; 5,68,104 = very dark blue */
 }
 .wrapper .sidebar ul li a:hover .icon,
 .wrapper .sidebar ul li a.active .icon{
-	color: #0c7db1;
+	color: #0c7db1;  /* dark blue */
 }
 .wrapper .sidebar ul li a:hover:before,
 .wrapper .sidebar ul li a.active:before{
@@ -75,7 +75,7 @@ body{
 	transition: all 0.5s ease;
 }
 .wrapper .section .top_navbar{
-	background: rgb(7, 105, 185);
+	background: rgb(128, 255, 0);  /* pure green; 7,105,185 = strong blue */
 	height: 50px;
 	display: flex;
 	align-items: center;
@@ -84,10 +84,10 @@ body{
 }
 .wrapper .section .top_navbar .hamburger a{
 	font-size: 28px;
-	color: #f4fbff;
+	color: ##c9fdc9;  /* very soft, lime green; f4fbff = very pale (mostly white) blue */
 }
 .wrapper .section .top_navbar .hamburger a:hover{
-	color: #a2ecff;
+	color: #c9fdc9;  /* a2ecff = pale cyan */
 }
 
 body.active .wrapper .sidebar{
