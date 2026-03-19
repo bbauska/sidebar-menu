@@ -1,5 +1,5 @@
 /**
- * sidebarEffects.js v1.0.0
+ * sidebarEffects.js of sidebar-menu/js for sidebar.bauska.org
  * http://www.codrops.com
  *
  * Licensed under the MIT license.
