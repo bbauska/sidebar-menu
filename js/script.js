@@ -1,4 +1,5 @@
 /* 
+script.js of sidebar-menu/js for sidebar.bauska.org
 Inspired from: https://tympanus.net/codrops/2013/08/28/transitions-for-off-canvas-navigations/
 there are still some quirks for animation 3, 6, 7, 8 & 14 
 as they do not animate back gracefully  
